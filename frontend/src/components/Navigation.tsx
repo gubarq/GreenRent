@@ -1,14 +1,22 @@
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 export const Navigation = () => {
     return (
-        <nav>
-            <ul>
-                <li><NavLink to={'/'}>Home</NavLink></li>
-                <li><NavLink to={'/users'}>Users</NavLink></li>
-                <li><NavLink to={'/add-user'}>Add User</NavLink></li>
-                <li><NavLink to={'/contact'}>Contact</NavLink></li>
+        <nav className="navbar">
+            <Link to="/" className="logo-link">
+                <img src="/logo.png" alt="GreenRent Logo" className="logo" />
+            </Link>
+
+            <ul className="nav-menu">
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/bikes">Bikes</NavLink></li>
+                <li><NavLink to="/scooters">Scooters</NavLink></li>
             </ul>
+
+            <div className="navbar-right">
+                <img src="/phone.png" alt="icon" className="phone-icon" />
+                <span>+359 88 123 4567</span>
+            </div>
         </nav>
     )
 }
