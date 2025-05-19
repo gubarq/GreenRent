@@ -10,7 +10,7 @@ export const EditUser = () => {
     const { id } = useParams();
 
     const getUser = async (id: string) => {
-        const response = await fetch(`http://localhost:3000/user/${id}`)
+        const response = await fetch(`http://localhost:3000/scooter/${id}`)
         const data = await response.json();
         const formattedUser = {
             username: data.username,
@@ -28,7 +28,7 @@ export const EditUser = () => {
 
     const onSubmit = async (data) => {
         try {
-            await fetch('http://localhost:3000/user', {
+            await fetch('http://localhost:3000/scooter', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

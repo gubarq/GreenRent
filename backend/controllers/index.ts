@@ -1,1 +1,2 @@
-export {UserController} from './UserController';
+export {BikeController} from './BikeController';
+export {ScooterController} from './ScooterController';

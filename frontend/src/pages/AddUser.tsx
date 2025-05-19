@@ -8,7 +8,7 @@ export const AddUser = () => {
 
     const onSubmit = async (data) => {
         try {
-            await fetch('http://localhost:3000/user', {
+            await fetch('http://localhost:3000/scooter', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

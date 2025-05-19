@@ -1,1 +1,2 @@
-export {UserModel} from './UserModel';
+export {BikeModel} from './BikeModel';
+export {ScooterModel} from './ScooterModel';

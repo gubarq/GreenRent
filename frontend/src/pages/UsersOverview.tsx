@@ -8,14 +8,14 @@ export const UsersOverview: FC = () => {
     const [users, setUsers] = useState<any[]>([])
 
     const getUsers = async () => {
-        const result = await fetch('http://localhost:3000/user');
+        const result = await fetch('http://localhost:3000/scooter');
         const data = await result.json();
         setUsers(data);
     }
 
     const deleteUser = async (id: number) => {
         try {
-            await fetch(`http://localhost:3000/user/${id}`, {
+            await fetch(`http://localhost:3000/scooter/${id}`, {
                 method: 'DELETE'
             });
             await getUsers();

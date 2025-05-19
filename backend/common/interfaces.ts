@@ -1,12 +1,37 @@
-export type User = {
-    id: number,
-    username: string,
-    password: string,
-    isActive: boolean,
+export type Bike = {
+    ID: number,
+    Brand: string,
+    Model: string,
+    Price: number,
+    IsRented: boolean,
+    Description: string,
+    ImageUrl: string,
 }
 
-export type CreateUser = {
-    username: string,
-    password: string,
-    isActive: boolean,
+export type CreateBike = {
+    Brand: string,
+    Model: string,
+    Price: number,
+    IsRented: boolean,
+    Description: string,
+    ImageUrl: string,
+}
+
+export type Scooter = {
+    ID: number,
+    Brand: string,
+    Model: string,
+    Price: number,
+    IsRented: boolean,
+    Description: string,
+    ImageUrl: string,
+}
+
+export type CreateScooter = {
+    Brand: string,
+    Model: string,
+    Price: number,
+    IsRented: boolean,
+    Description: string,
+    ImageUrl: string,
 }
