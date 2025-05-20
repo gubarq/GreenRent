@@ -57,7 +57,7 @@ export const ScootersOverview = () => {
                         <img src={scooter.ImageUrl} alt={'scooter image'}/>
                         <div className="details">
                             <h3>{scooter.Brand} {scooter.Model}</h3>
-                            <p className="extra">from {scooter.Price} €</p>
+                            <p className="extra">from {scooter.Price} €/daily</p>
                             <p className="extra">Description: {scooter.Description}</p>
                             <p className={`availability ${scooter.IsRented ? "unavailable" : "available"}`}>
                                 Availability: {scooter.IsRented ? "Rented" : "Free"}</p>
