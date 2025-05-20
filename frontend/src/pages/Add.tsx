@@ -1,4 +1,4 @@
-// frontend/src/pages/AddScooter.tsx
+// frontend/src/pages/Add.tsx
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ type ItemForm = {
     ImageUrl: string;
 };
 
-export const AddScooter: React.FC = () => {
+export const Add: React.FC = () => {
     const [openModal, setOpenModal] = useState<"scooter" | "bike" | null>(null);
     const navigate = useNavigate();
 
@@ -47,13 +47,14 @@ export const AddScooter: React.FC = () => {
         type: "scooter" | "bike";
         onClose: () => void;
     }> = ({ type, onClose }) => (
+        <div className="center">
         <div className="modal-overlay">
             <div className="modal-content">
-                <h2>Add {type === "scooter" ? "Scooter" : "Bike"}</h2>
+                <h2 className="Add-btn">Add {type === "scooter" ? "Scooter" : "Bike"}</h2>
                 <form onSubmit={handleSubmit(data => submitItem(type, data))}>
-                    <label>
+                    <label className="form-label">
                         Brand
-                        <input {...register("Brand", { required: true })} />
+                                 <input {...register("Brand", { required: true })} />
                     </label>
                     <label>
                         Model
@@ -76,11 +77,12 @@ export const AddScooter: React.FC = () => {
                         <input {...register("ImageUrl", { required: true })} />
                     </label>
                     <div style={{ display: "flex", gap: 8, marginTop: 12 }}>
-                        <button type="submit">Apply</button>
-                        <button type="button" onClick={onClose}>Cancel</button>
+                        <button className="submit-btn" type="submit">Apply</button>
+                        <button className="submit-btn" type="button" onClick={onClose}>Cancel</button>
                     </div>
                 </form>
             </div>
+        </div>
         </div>
     );
 
