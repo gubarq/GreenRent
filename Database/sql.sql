@@ -1,3 +1,7 @@
+CREATE DATABASE greenrent;
+
+USE greenrent;
+
 CREATE TABLE bikes (
   ID int NOT NULL AUTO_INCREMENT,
   Brand varchar(30) NOT NULL,
