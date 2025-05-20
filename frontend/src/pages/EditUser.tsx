@@ -26,6 +26,7 @@ export const EditUser = () => {
         })()
     }, []);
 
+    // @ts-ignore
     const onSubmit = async (data) => {
         try {
             await fetch('http://localhost:3000/scooter', {
