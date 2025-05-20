@@ -344,6 +344,38 @@
   padding: 10px;
 }
 
+/* wrapper flex container */
+.add-buttons {
+  display: flex;
+  justify-content: center;  /* centers both buttons */
+  gap: 10px;                /* space between them */
+}
+
+/* common button styles */
+.add-buttons__btn {
+  padding: 5px 10px;
+  font-size: 25px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* variant colors */
+.add-buttons__btn--scooter {
+  background: #4caf50;
+  color: #fff;
+}
+
+.add-buttons__btn--bike {
+  background: #2196f3;
+  color: #fff;
+}
+
+/* disabled state */
+.add-buttons__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 
 

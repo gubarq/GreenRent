@@ -88,20 +88,23 @@ export const Add: React.FC = () => {
 
     return (
         <>
-            <div style={{ display: "flex", gap: 12 }}>
+            <div className="add-buttons">
                 <button
+                    className="add-buttons__btn add-buttons__btn--scooter"
                     disabled={openModal !== null}
                     onClick={() => setOpenModal("scooter")}
                 >
                     Add Scooter
                 </button>
                 <button
+                    className="add-buttons__btn add-buttons__btn--bike"
                     disabled={openModal !== null}
                     onClick={() => setOpenModal("bike")}
                 >
                     Add Bike
                 </button>
             </div>
+
 
             {openModal === "scooter" && (
                 <Modal type="scooter" onClose={() => setOpenModal(null)} />
