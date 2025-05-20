@@ -9,8 +9,8 @@ export const Navigation = () => {
 
             <ul className="nav-menu">
                 <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/bikes">Bikes</NavLink></li>
-                <li><NavLink to="/scooters">Scooters</NavLink></li>
+                <li><NavLink to="/bike">Bikes</NavLink></li>
+                <li><NavLink to="/scooter">Scooters</NavLink></li>
             </ul>
 
             <div className="navbar-right">

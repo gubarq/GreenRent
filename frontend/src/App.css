@@ -69,16 +69,7 @@
   flex-direction: column;
   height: 100vh;
 }
-#container button {
-  background-color: #facd60;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 5px;
-  color: black;
-  cursor: pointer;
-  max-height: 40px;
-  font-size: 20px;
-}
+
 #container button:hover {
   background-color: #fb7756;
 }
@@ -198,5 +189,47 @@
   color: #222;
 }
 
-
+/*Bikes and Scooters Overview*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  padding: 32px;
+  background-color: #f9f9f9;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;}
+.card img{
+  height: 200px;
+  width: 200px;
+}
+.grid .card .details {
+  padding: 20px;
+}
+.grid .card .details h3 {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #333;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.grid .card .details .extra {
+  font-size: 18px;
+  color: #888;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.rent-btn{
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #197d32;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
 /*# sourceMappingURL=App.css.map */

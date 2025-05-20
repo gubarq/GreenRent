@@ -17,11 +17,11 @@ export const Home = () => {
             <h2>Discover our vehicles</h2>
             <h3>RENT NOW</h3>
             <div className="vehicle-cards">
-                <Link to="/scooters" className="vehicle-card">
+                <Link to="/scooter" className="vehicle-card">
                     <img src="/scooter.png" alt="Electric Scooter" />
                     <p>Electric Scooter</p>
                 </Link>
-                <Link to="/bikes" className="vehicle-card">
+                <Link to="/bike" className="vehicle-card">
                     <img src="/bike.png" alt="Electric Bike" />
                     <p>Electric Bike</p>
                 </Link>
