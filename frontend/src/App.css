@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial sans-serif;
+  /*font-family: Arial sans-serif;*/
+  font-family: 'Inter', sans-serif;
 }
 
+/*navigation bar style*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff; /* светло зелено */
+  background-color: #ffffff;
   padding: 10px 40px;
   height: 120px;
 }
@@ -24,8 +26,6 @@
   height: 200px;
 }
 
-
-
 .nav-menu {
   display: flex;
   list-style: none;
@@ -36,7 +36,7 @@
 .nav-menu li a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   color: #197d32;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   transition: color 0.2s;
@@ -63,68 +63,21 @@
   object-fit: contain;
 }
 
-#container {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  height: 100vh;
-}
-
-#container button:hover {
-  background-color: #fb7756;
-}
-#container h1 {
-  margin-bottom: 10px;
-  font-size: 120px;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-#container form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-#container form input {
-  padding: 10px 5px;
-}
-#container form ul li {
-  font-size: 16px;
-}
-#container ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 10px;
-  width: 200px;
-}
-#container ul li {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
-#container ul li span {
-  font-size: 20px;
-}
-#container ul li .actions {
-  display: flex;
-  gap: 20px;
-}
-
+/*Home Page*/
 .hero {
-  /*noinspection CssUnknownTarget*/
+
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url('background_home.jpg') no-repeat center center/cover;
 
   min-height: 90vh;
     display: flex;
-    justify-content: center;   /* хоризонтално центриране */
-    align-items: center;       /* вертикално центриране */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
     color: white;
 
 }
-
 
 .hero-text {
 
@@ -133,6 +86,7 @@
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
+/*Discover our vehicles*/
 .vehicle-section {
   padding: 60px 20px;
   text-align: center;
@@ -160,7 +114,6 @@
   flex-wrap: wrap;
 
 }
-
 
 .vehicle-card {
   background-color: #f1f1f1;
@@ -197,8 +150,6 @@
   padding: 32px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url('second_background.png') no-repeat center center/cover;
-
-
 }
 
 .card {
@@ -226,7 +177,7 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2); /* сянка */
   z-index: 1;
 }
-
+/*Rent and unrent in green and red*/
 .availability {
   font-weight: bold;
   margin-top: 8px;
@@ -257,6 +208,8 @@
   color: #888;
   font-family: "Bookman Old Style", sans-serif;
 }
+
+/*Rent button*/
 .rent-btn{
   margin-top: auto;
   align-self: center;
@@ -269,26 +222,13 @@
   font-weight: 500;
   font-size: 24px;
   transition: all 0.25s ease-in-out;
-
 }
 
-.submit-btn {
-  background-color: #006400;
-  color: #fff;
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.rent-btn:hover {
+  background-color: #fb7756;
 }
 
+/*Add page form*/
 .modal-content form {
   display: flex;
   flex-direction: column;
@@ -321,6 +261,25 @@
   box-shadow: 0 0 0 2px rgba(0, 100, 0, 0.1);
 }
 
+/*Submit button in add page form*/
+.submit-btn {
+  background-color: #006400;
+  color: #fff;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Add buttons in add page*/
 .Add-btn {
   background-color: #006400;
   color: #fff;
@@ -347,8 +306,8 @@
 /* ADD-BUTTONS ADD PAGE */
 .add-buttons {
   display: flex;
-  justify-content: center;  /* centers both buttons */
-  gap: 10px;                /* space between them */
+  justify-content: center;
+  gap: 10px;
 }
 
 /* common button styles */
@@ -376,6 +335,83 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* about page */
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+/* WHO WE ARE */
+.about-head {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-left h2,
+.about-right h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about-right {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-right p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-image {
+  text-align: left;
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* WHAT WE DO */
+.about-head.align-top {
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.about-right-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.about-right-text h2 {
+  font-size: 36px;
+  margin-bottom: 20%;
+}
+
+.about-right-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
 
 
 

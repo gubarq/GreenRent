@@ -4,4 +4,4 @@ export {ScootersOverview} from './ScootersOverview.tsx';
 export {Add} from './Add.tsx';
 export {Admin} from './Admin.tsx';
 export {NotFound} from './NotFound.tsx';
-export {Contact} from './Contact.tsx';
+export {About} from './About.tsx';

@@ -11,6 +11,7 @@ export const Navigation = () => {
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/bike">Bikes</NavLink></li>
                 <li><NavLink to="/scooter">Scooters</NavLink></li>
+                <li><NavLink to="/about">About us</NavLink></li>
             </ul>
 
             <div className="navbar-right">
