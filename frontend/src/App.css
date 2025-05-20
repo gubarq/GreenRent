@@ -53,13 +53,19 @@
   gap: 8px;
   color: #197d32;
   font-weight: 1000;
-  font-size: 30px;
+  font-size: 24px;
+  transition:all 0.25s ease-in-out;
+}
+.navbar-right:hover {
+  color: #38423f;
+  transform: translateY(-8px) scale(1.03); /* зоом */
+  z-index: 1;
 }
 
 .phone-icon {
-  height: 65px;
-  width: 65px;
-  margin-left: 10px;
+  height: 45px;
+  width: 45px;
+  margin-left: 30px;
   object-fit: contain;
 }
 
