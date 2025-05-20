@@ -61,7 +61,8 @@ export const BikesOverview = () => {
                             <h3>{bike.Brand} {bike.Model}</h3>
                             <p className="extra">from {bike.Price} €</p>
                             <p className="extra">Description: {bike.Description}</p>
-                            <p className="extra">Availability: {bike.IsRented ? "Rented" : "Free"}</p>
+                            <p className={`availability ${bike.IsRented ? "unavailable" : "available"}`}>
+                                Availability: {bike.IsRented ? "Rented" : "Free"}</p>
                             {bike.IsRented === 0 && (
                                 <button className="rent-btn" onClick={() => handleRent(bike.ID)}>Rent this bike</button>
                             )}

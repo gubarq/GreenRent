@@ -195,19 +195,52 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
   padding: 32px;
-  background-color: #f9f9f9;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url('second_background.png') no-repeat center center/cover;
+
 }
 .card {
-  background: #fff;
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  text-align: center;}
-.card img{
-  height: 200px;
-  width: 200px;
+  min-height: 480px; /* еднаква височина за всички */
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
+.card img {
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03); /* зоом */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2); /* сянка */
+  z-index: 1;
+}
+
+.availability {
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 25px;
+}
+
+.available {
+  color: green;
+  font-size: 25px;
+}
+
+.unavailable {
+  color: red;
+  font-size: 25px;
+}
+
 .grid .card .details {
   padding: 20px;
 }
@@ -223,13 +256,19 @@
   font-family: "Bookman Old Style", sans-serif;
 }
 .rent-btn{
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #197d32;
+  margin-top: auto;
+  align-self: center;
+  background-color: #006400;
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: 0.3s;
+  font-weight: 500;
+  font-size: 24px;
+  transition: all 0.25s ease-in-out;
+
 }
+
+
 /*# sourceMappingURL=App.css.map */
