@@ -50,9 +50,9 @@ export const EditScooter = () => {
     };
 
     return (
-        <div>
-            <h2>Edit Scooter</h2>
-            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px", maxWidth: 300 }}>
+        <div className="edit-container">
+            <h2 className="edit-title">Edit Scooter</h2>
+            <form className="edit-form" onSubmit={handleSubmit}>
                 <label>
                     Brand
                     <input name="Brand" value={scooter.Brand} onChange={handleChange} />
