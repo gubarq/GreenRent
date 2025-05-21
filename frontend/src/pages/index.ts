@@ -5,3 +5,5 @@ export {Add} from './Add.tsx';
 export {Admin} from './Admin.tsx';
 export {NotFound} from './NotFound.tsx';
 export {About} from './About.tsx';
+export {EditBike} from './EditBike.tsx';
+export {EditScooter} from './EditScooter.tsx';

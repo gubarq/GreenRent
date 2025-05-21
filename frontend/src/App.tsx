@@ -1,6 +1,6 @@
 import './App.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import { About, Admin, Home, NotFound, BikesOverview,ScootersOverview} from "./pages";
+import { About, Admin, Home, NotFound, BikesOverview,ScootersOverview,EditBike,EditScooter} from "./pages";
 import {Add} from "./pages";
 import {Navigation} from "./components";
 
@@ -19,6 +19,8 @@ function App() {
                     <Route path={'/add'} element={<Add/>}/>
                     <Route path={'/Admin'} element={<Admin/>}/>
                     <Route path={'/About'} element={<About/>}/>
+                    <Route path={'/Admin/:id/EditBike'} element={<EditBike/>}/>
+                    <Route path={'/Admin/:id/EditScooter'} element={<EditScooter/>}/>
                     <Route path={'*'} element={<NotFound/>}/>
                 </Routes>
             </div>

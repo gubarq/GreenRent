@@ -76,7 +76,7 @@ export const Admin = () => {
                             <p className={`availability ${bike.IsRented ? "unavailable" : "available"}`}>
                                 Availability: {bike.IsRented ? "Rented" : "Free"}</p>
                             <button className="rent-btn" type={"submit"} onClick={() => handleDeleteBikes(bike.ID)}>Delete</button>
-                            <button className="rent-btn" type={"submit"} onClick={() => navigate(`/bike/${bike.ID}/edit`)}>Edit</button>
+                            <button className="rent-btn" type={"submit"} onClick={() => navigate(`/admin/${bike.ID}/editbike`)}>Edit</button>
                         </div>
                     </div>
                 ))}
@@ -93,7 +93,7 @@ export const Admin = () => {
                         <p className={`availability ${scooter.IsRented ? "unavailable" : "available"}`}>
                             Availability: {scooter.IsRented ? "Rented" : "Free"}</p>
                         <button className="rent-btn" type={"submit"} onClick={() => handleDeleteScooters(scooter.ID)}>Delete</button>
-                        <button className="rent-btn" type={"submit"} onClick={() => navigate(`/scooter/${scooter.ID}/edit`)}>Edit</button>
+                        <button className="rent-btn" type={"submit"} onClick={() => navigate(`/admin/${scooter.ID}/editscooter`)}>Edit</button>
                     </div>
                 </div>
             ))}
