@@ -15,15 +15,17 @@ bikeRoutes.post("/bike", async (req: Request, res: Response) => {
     const data = req.body;
     res.send(await bikeController.createBike(data));
 })
-bikeRoutes.put("/bike/:id/edit", (req: Request, res: Response) => {
+bikeRoutes.put("/admin/:id/EditBike", async (req: Request, res: Response) => {
     const id = req.params.id;
     const data = req.body;
-    res.send(bikeController.updateBike(id, data));
+    await bikeController.updateBike(id, data);
+    res.status(200).json({ message: `Bike with ID ${id} updated.` });
 })
 bikeRoutes.delete("/bike/:id", async (req: Request, res: Response) => {
     const id = req.params.id;
     res.send(await bikeController.deleteBike(id));
 })
+
 bikeRoutes.patch("/bike/:id/rent", async (req: Request, res: Response) => {
     const id = req.params.id;
     res.send(await bikeController.rentBike(id));

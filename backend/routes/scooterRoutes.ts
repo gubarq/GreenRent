@@ -1,6 +1,7 @@
 // backend/routes/scooterRoutes.ts
 import { Request, Response, Router } from "express";
 import { ScooterController } from "../controllers";
+import {bikeRoutes} from "./bikeRoutes";
 
 const scooterController = new ScooterController();
 export const scooterRoutes = Router();
@@ -25,6 +26,12 @@ scooterRoutes.post("/scooter", async (req: Request, res: Response) => {
         res.status(500).send(String(err));
     }
 });
+/*scooterRoutes.put("/admin/:id/EditScooter", async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const data = req.body;
+    await scooterController.updatescooter(id, data);
+    res.status(200).json({ message: `Scooter with ID ${id} updated.` });
+})*/
 
 scooterRoutes.delete("/scooter/:id", async (req: Request, res: Response) => {
     const id = req.params.id;
