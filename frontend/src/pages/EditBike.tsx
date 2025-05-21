@@ -45,7 +45,7 @@ export const EditBike = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(bike),
         })
-            .then(() => navigate("/bike"))
+            .then(() => navigate("/admin"))
             .catch((err) => console.error("Failed to update bike:", err));
     };
 

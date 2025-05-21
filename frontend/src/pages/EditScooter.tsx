@@ -45,7 +45,7 @@ export const EditScooter = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(scooter),
         })
-            .then(() => navigate("/scooter"))
+            .then(() => navigate("/admin"))
             .catch((err) => console.error("Failed to update scooter:", err));
     };
 
