@@ -154,8 +154,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
   padding: 32px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  url('second_background.png') no-repeat center center/cover;
+  background: linear-gradient(to right, #197d32, #0f3d1c);
 }
 
 .card {
